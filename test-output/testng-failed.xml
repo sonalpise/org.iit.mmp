@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.iit.mmp.patientmodule.tests.TS_EditPatientProfile">
+      <class name="org.iit.mmp.patientmodule.tests.TS_SearchSymptoms">
         <methods>
           <include name="beforeTest"/>
+          <include name="logout"/>
           <include name="afterTest"/>
-          <include name="editProfileAndVerify"/>
+          <include name="varifySymptomsPresent"/>
         </methods>
-      </class> <!-- org.iit.mmp.patientmodule.tests.TS_EditPatientProfile -->
+      </class> <!-- org.iit.mmp.patientmodule.tests.TS_SearchSymptoms -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
