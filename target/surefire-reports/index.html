@@ -165,12 +165,12 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;SuitePatientPortal&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;PatientProfile&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;SuitePatientPortal&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;TestPatientProfileAndSearch&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;org.iit.mmp.patientmodule.tests.TS_EditPatientProfile&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- PatientProfile --&gt;
+  &lt;/test&gt; &lt;!-- TestPatientProfileAndSearch --&gt;
 &lt;/suite&gt; &lt;!-- SuitePatientPortal --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,7 +182,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">PatientProfile (1 class)</span>
+                <span class="test-name">TestPatientProfileAndSearch (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,20 +212,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'editProfileAndVerify')
 data.setCell(0, 2, 'org.iit.mmp.patientmodule.tests.TS_EditPatientProfile')
-data.setCell(0, 3, 13480);
+data.setCell(0, 3, 24803);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'org.iit.mmp.patientmodule.tests.TS_EditPatientProfile')
-data.setCell(1, 3, 9608);
+data.setCell(1, 3, 11408);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'logout')
 data.setCell(2, 2, 'org.iit.mmp.patientmodule.tests.TS_EditPatientProfile')
-data.setCell(2, 3, 317);
+data.setCell(2, 3, 378);
 window.suiteTableData['SuitePatientPortal']= { tableData: data, tableDiv: 'times-div-SuitePatientPortal'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-SuitePatientPortal">
               </div> <!-- times-div-SuitePatientPortal -->
             </div> <!-- times-div -->
@@ -258,19 +258,19 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">10404 ms</span>
+                <span class="method-start">18727 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editProfileAndVerify</span>
-                <span class="method-start">20014 ms</span>
+                <span class="method-start">30137 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">33494 ms</span>
+                <span class="method-start">54941 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">33812 ms</span>
+                <span class="method-start">55320 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

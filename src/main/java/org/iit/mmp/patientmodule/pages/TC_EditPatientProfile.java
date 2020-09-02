@@ -15,6 +15,7 @@ import org.openqa.selenium.NoAlertPresentException;
 public class TC_EditPatientProfile extends BaseWebDriver {
 
 	/**
+	 * 
 	 **/
 	protected void _openAppURL(String appURL) {
 		initiateDriver();

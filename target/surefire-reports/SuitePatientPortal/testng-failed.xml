@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [SuitePatientPortal]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="classes" name="TestPatientProfileAndSearch(failed)" verbose="0">
+    <classes>
+      <class name="org.iit.mmp.patientmodule.tests.TS_EditPatientProfile">
+        <methods>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="editProfileAndVerify"/>
+          <include name="logout"/>
+        </methods>
+      </class> <!-- org.iit.mmp.patientmodule.tests.TS_EditPatientProfile -->
+    </classes>
+  </test> <!-- TestPatientProfileAndSearch(failed) -->
+</suite> <!-- Failed suite [SuitePatientPortal] -->

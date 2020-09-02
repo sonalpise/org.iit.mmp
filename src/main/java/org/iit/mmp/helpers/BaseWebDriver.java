@@ -20,7 +20,7 @@ public class BaseWebDriver {
 		// setup driver configurations
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		Logger.log("I", "Webdriver initiated");
 	} // initiateDriver

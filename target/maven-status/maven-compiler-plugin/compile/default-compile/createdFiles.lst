@@ -1,0 +1,6 @@
+org\iit\mmp\patientmodule\pages\TC_SearchSymptoms.class
+org\iit\mmp\helpers\TestDataManager.class
+org\iit\utils\Logger.class
+org\iit\mmp\patientmodule\pages\TC_PayFees.class
+org\iit\mmp\patientmodule\pages\TC_EditPatientProfile.class
+org\iit\mmp\helpers\BaseWebDriver.class

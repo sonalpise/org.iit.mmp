@@ -1,5 +1,6 @@
 package org.iit.mmp.patientmodule.tests;
 
+import org.testng.annotations.Test;
 import org.iit.mmp.patientmodule.pages.TC_SearchSymptoms;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -14,6 +15,7 @@ public class TS_SearchSymptoms extends TC_SearchSymptoms {
 	private static String username = "ria1";
 	private static String password = "Ria12345";
 	
+
 	/* ```````````````````````````````````````````````````````````````` */
 	@Test(priority = 1)
 	public void login() {
@@ -24,16 +26,13 @@ public class TS_SearchSymptoms extends TC_SearchSymptoms {
 	public void logout() {
 		logoutPatientPortal();
 	} // logout
-	
+
 	@Test(priority = 2)
-	public void verifySearchSymptomsLink() {
-		navigateSerachSymptoms();
-	}
-	
-	@Test(priority = 3)
-	public void varifySymptomsPresent() {
+	public void searchSymptoms() {
+		searchSymptoms("fever");
 		searchSymptoms("cough");
-	}//varifySymptomsPresent
+	} // searchSymptoms
+	
 
 	/* ```````````````````````````````````````````````````````````````` */
 	/**
@@ -51,6 +50,3 @@ public class TS_SearchSymptoms extends TC_SearchSymptoms {
 	} // afterTest
 
 } // TS_SearchSymptoms
-
-
-

@@ -8,7 +8,6 @@
           <include name="beforeTest"/>
           <include name="logout"/>
           <include name="afterTest"/>
-          <include name="varifySymptomsPresent"/>
         </methods>
       </class> <!-- org.iit.mmp.patientmodule.tests.TS_SearchSymptoms -->
     </classes>

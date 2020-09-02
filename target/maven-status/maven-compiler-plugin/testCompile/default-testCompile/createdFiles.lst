@@ -1,0 +1,3 @@
+org\iit\mmp\patientmodule\tests\TS_EditPatientProfile.class
+org\iit\mmp\patientmodule\tests\TS_PayFees.class
+org\iit\mmp\patientmodule\tests\TS_SearchSymptoms.class
